@@ -9,5 +9,12 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :post, Types::PostType, null: true do
+      argument :id, ID, required: true
+    end
+    def post(id:)
+      Post.find(id)
+    end
   end
 end
