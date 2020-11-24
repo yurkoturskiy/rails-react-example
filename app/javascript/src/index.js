@@ -4,9 +4,14 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./components/Header";
 
 function Root() {
-  return <div>Our root starts here!</div>;
+  return (
+    <div>
+      <Header>Our root starts here!</Header>
+    </div>
+  );
 }
 
 document.addEventListener("DOMContentLoaded", () => {
